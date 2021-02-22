@@ -5,36 +5,31 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace ReCap.DAL.Concrete.InMemory
+namespace ReCap.DAL.Concrete.EntityFramework
 {
-    public class InMemoryColorDal : IColorDal
+    public class EfBrandDal : IBrandDal
     {
-        public void Add(Color color)
+        public void Add(Brand entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Color color)
+        public void Delete(Brand entity)
         {
             throw new NotImplementedException();
         }
 
-        public Color Get(Expression<Func<Color, bool>> filter)
+        public Brand Get(Expression<Func<Brand, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public List<Color> GetAll()
+        public List<Brand> GetAll(Expression<Func<Brand, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
 
-        public List<Color> GetAll(Expression<Func<Color, bool>> filter = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Color color)
+        public void Update(Brand entity)
         {
             throw new NotImplementedException();
         }

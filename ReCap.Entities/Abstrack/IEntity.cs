@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ReCap.Entities.Abstrack
 {
-    interface IEntity
+    public interface IEntity
     {
     }
 }

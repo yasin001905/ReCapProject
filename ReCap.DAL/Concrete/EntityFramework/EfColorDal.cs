@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace ReCap.DAL.Concrete.InMemory
+namespace ReCap.DAL.Concrete.EntityFramework
 {
-    public class InMemoryColorDal : IColorDal
+    public class EfColorDal : IColorDal
     {
-        public void Add(Color color)
+        public void Add(Color entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Color color)
+        public void Delete(Color entity)
         {
             throw new NotImplementedException();
         }
@@ -24,17 +24,12 @@ namespace ReCap.DAL.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-        public List<Color> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Color> GetAll(Expression<Func<Color, bool>> filter = null)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Color color)
+        public void Update(Color entity)
         {
             throw new NotImplementedException();
         }
