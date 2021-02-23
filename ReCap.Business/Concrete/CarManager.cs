@@ -1,6 +1,7 @@
 ﻿using ReCap.Business.Abstrack;
 using ReCap.DAL.Abstrack;
 using ReCap.Entities.Concrete;
+using ReCap.Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,6 +28,11 @@ namespace ReCap.Business.Concrete
         public List<Car> GetByDailyPrice(decimal min, decimal max)
         {
             return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
+        }
+
+        public List<CarDetailDto> GetCarDetails()
+        {
+            return _carDal.GetCarDetails();
         }
     }
 }
