@@ -1,4 +1,4 @@
-﻿using ReCap.Entities.Abstrack;
+﻿using ReCap.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

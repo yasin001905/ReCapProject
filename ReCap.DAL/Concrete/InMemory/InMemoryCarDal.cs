@@ -17,19 +17,19 @@ namespace ReCap.DAL.Concrete.InMemory
             {
                 new Car
                 {
-                    BrandId=1, ColorId= 1, DailyPrice= 150, ModelYear= 1999, Description= "sdfsdfsdfsdf"
+                    BrandId=1, ColorId= 1, CarName="Mercedes", DailyPrice= 150, ModelYear= 1999, Description= "sdfsdfsdfsdf"
                 },
                 new Car
                 {
-                    BrandId=2, ColorId= 2, DailyPrice= 500, ModelYear= 2010, Description= "sdfsdfsdfsdf"
+                    BrandId=2, ColorId= 2,CarName="Bmw", DailyPrice= 500, ModelYear= 2010, Description= "sdfsdfsdfsdf"
                 },
                 new Car
                 {
-                    BrandId=2, ColorId= 1, DailyPrice= 350, ModelYear= 2005, Description= "sdfsdfsdfsdf"
+                    BrandId=2, ColorId= 1,CarName="Bmw", DailyPrice= 350, ModelYear= 2005, Description= "sdfsdfsdfsdf"
                 },
                 new Car
                 {
-                    BrandId=1, ColorId= 3, DailyPrice= 200, ModelYear= 2002, Description= "sdfsdfsdfsdf"
+                    BrandId=3, ColorId= 3,CarName="Audi", DailyPrice= 200, ModelYear= 2002, Description= "sdfsdfsdfsdf"
                 }
 
             };

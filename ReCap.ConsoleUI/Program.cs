@@ -11,14 +11,23 @@ namespace ReCap.ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EfCarDal());
-            foreach (var car in carManager.GetByDailyPrice(45000,50000))
+            //CarTest();
+
+            ColorManager colorManager = new ColorManager(new EfColorDal());
+            foreach (var color in colorManager.GetAll())
             {
-                Console.WriteLine(car.Description);
+                Console.WriteLine(color.ColorName);
             }
 
+        }
 
-
+        private static void CarTest()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
+            foreach (var car in carManager.GetByDailyPrice(45000, 50000))
+            {
+                Console.WriteLine(car.CarName);
+            }
         }
     }
 }
