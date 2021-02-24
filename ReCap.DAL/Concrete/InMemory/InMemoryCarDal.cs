@@ -43,7 +43,7 @@ namespace ReCap.DAL.Concrete.InMemory
         public void Delete(Car car)
         {
             
-            Car carToDelete = _cars.SingleOrDefault(c=>c.CarId == car.CarId);
+            Car carToDelete = _cars.SingleOrDefault(c=>c.Id == car.Id);
             _cars.Remove(carToDelete);
         }
 
@@ -74,7 +74,7 @@ namespace ReCap.DAL.Concrete.InMemory
 
         public void Update(Car car)
         {
-            Car carToUpdate = _cars.SingleOrDefault(c => c.CarId == car.CarId);
+            Car carToUpdate = _cars.SingleOrDefault(c => c.Id == car.Id);
             carToUpdate.BrandId = car.BrandId;
             carToUpdate.ColorId = car.ColorId;
             carToUpdate.DailyPrice = car.DailyPrice;

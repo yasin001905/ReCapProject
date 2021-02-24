@@ -21,7 +21,7 @@ namespace ReCap.Business.Concrete
 
         public Brand GetById(int brandId)
         {
-            return _brandDal.Get(b => b.BrandId == brandId);
+            return _brandDal.Get(b => b.Id == brandId);
         }
     }
 }

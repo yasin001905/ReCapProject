@@ -1,4 +1,5 @@
-﻿using ReCap.Entities.Concrete;
+﻿using ReCap.Core.Utilities.Results;
+using ReCap.Entities.Concrete;
 using ReCap.Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,12 @@ namespace ReCap.Business.Abstrack
 {
     public interface ICarService
     {
-        List<Car> GetAll();
-        List<Car> GetAllByBrandId(int id);
-        List<Car> GetByDailyPrice(decimal min, decimal max);
-        List<CarDetailDto> GetCarDetails();
+        IDataResult<List<Car>> GetAll();
+        IDataResult<List<Car>> GetAllByBrandId(int id);
+        IDataResult<List<Car>> GetByDailyPrice(decimal min, decimal max);
+        IDataResult<List<CarDetailDto>> GetCarDetails();
+        IDataResult<Car> GetById(int carId);
+        IResult Add(Car car);
+        
     }
 }

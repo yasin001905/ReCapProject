@@ -19,10 +19,10 @@ namespace ReCap.DAL.Concrete.EntityFramework
             {
                 var result = from c in context.Cars
                              join b in context.Brands
-                             on c.BrandId equals b.BrandId
+                             on c.BrandId equals b.Id
                              select new CarDetailDto
                              {
-                                 CarId = c.CarId,
+                                 CarId = c.Id,
                                  CarName = c.CarName,
                                  BrandName = b.BrandName,
                                  DailyPrice = c.DailyPrice
