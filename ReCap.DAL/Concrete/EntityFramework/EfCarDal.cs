@@ -23,7 +23,6 @@ namespace ReCap.DAL.Concrete.EntityFramework
                              select new CarDetailDto
                              {
                                  CarId = c.Id,
-                                 CarName = c.CarName,
                                  BrandName = b.BrandName,
                                  DailyPrice = c.DailyPrice
                              };

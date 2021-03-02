@@ -39,7 +39,7 @@ namespace ReCap.ConsoleUI
             {
                 foreach (var car in result.Data)
                 {
-                    Console.WriteLine(car.ColorId + " / " + car.CarName);
+                    Console.WriteLine(car.ColorId + " / " + car.Description);
                 }
             }
             else

@@ -8,7 +8,7 @@ namespace ReCap.Business.Constants
     public static class Messages
     {
         public static string CarAdded = "Araç Eklendi";
-        public static string CarNameInvalid = "Ürün ismi geçersiz";
+        public static string CarDescriptionInvalid = "Ürün ismi geçersiz";
         internal static string MaintenanceTime= "Sistem bakımda";
         internal static string CarListed = "Araçlar Listelendi";
     }

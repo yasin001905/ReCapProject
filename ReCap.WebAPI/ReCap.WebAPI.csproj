@@ -4,5 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReCap.Business\ReCap.Business.csproj" />
+    <ProjectReference Include="..\ReCap.Core\ReCap.Core.csproj" />
+    <ProjectReference Include="..\ReCap.DAL\ReCap.DAL.csproj" />
+    <ProjectReference Include="..\ReCap.Entities\ReCap.Entities.csproj" />
+  </ItemGroup>
+
 
 </Project>

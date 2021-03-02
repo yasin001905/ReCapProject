@@ -6,6 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ReCap.Business.Abstrack;
+using ReCap.Business.Concrete;
+using ReCap.DAL.Abstrack;
+using ReCap.DAL.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +21,7 @@ namespace ReCap.WebAPI
     {
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
@@ -26,6 +31,8 @@ namespace ReCap.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<ICarService, CarManager>();
+            services.AddSingleton<ICarDal, EfCarDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
